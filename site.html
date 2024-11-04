@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio des Membres</title>
+    <link rel="stylesheet" href="site.css">
+    <!--importation de la font Yatara one-->
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    <!--importation des icones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--importation de la font Kanit-->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="image/iconee.png" alt="Icône" class="icon">
+        <h1>Portfolio des Membres</h1>
+    </header>
+    <div class="container">
+        <nav id="menu_nav">
+            <ul id="menu">
+                <li><a href="#acceuil" data-target="acceuil">Accueil</a></li>
+                <li class="ele_menu">
+                    <a href="#Babacar" data-target="Babacar">Babacar</a>
+                    <ul class="sous_menu">
+                        <li>Profil</li>
+                        <li>Description</li>
+                        <li>Expérience</li>
+                        <li>Parcours</li>
+                        <li>Hobbies</li>
+                    </ul>
+                </li>
+                <li class="ele_menu">
+                    <a href="#cv-Mouhamed" data-target="cv-Mouhamed">Mouhamed</a>
+                    <ul class="sous_menu">
+                        <li>Profil</li>
+                        <li>Description</li>
+                        <li>Expérience</li>
+                        <li>Parcours</li>
+                        <li>Hobbies</li>
+                    </ul>
+                </li>
+                <li class="ele_menu">
+                    <a href="#cv-AAF" data-target="cv-AAF">Abdoul Aziz</a>
+                    <ul class="sous_menu">
+                        <li>Profil</li>
+                        <li>Description</li>
+                        <li>Expérience</li>
+                        <li>Hobbies</a></li>
+                    </ul>
+                </li>
+                <li class="ele_menu">
+                    <a href="#Lamine" data-target="Lamine">Lamine</a>
+                    <ul class="sous_menu">
+                        <!--mettre des liens pour pouvoir naviguer dans le cv une fois activé.-->
+                        <li><a href="#profil-Lamine">Profil</a></li>
+                        <li><a href="#description-Lamine">Description</a></li>
+                        <li><a href="#experience-Lamine">Expérience</a></li>
+                        <li><a href="#parcours">Parcours</a></li>
+                        <li><a href="#hobbies-Lamine">Hobbies</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>        
+        <section id="content">
+
+            <div id="acceuil" class="cv-content active">
+                <span>Creez votre CV Canadien pro en vous</span>
+                <span>inspirant des notres</span>
+                <!-- pour ajouter une navigation a partir de la page d'acceuil-->
+                <nav id="cv_nav">
+                    <ul id="cv_list">
+                        <li><img src="image/cv-babacar.png" alt=""></li>
+                        <li><img src="image/cv-Mouhamed.png" alt=""></li>
+                        <li><img src="image/cv-abdou.png" alt=""></li>
+                        <li><img src="image/cv-lamine.png" alt=""></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="Babacar" class="cv-content">
+                <div>
+                    <main>
+                        <section class="profil">
+                            <h2>Objectif Professionnel</h2>
+                            <p>Étudiant en informatique récemment diplômé, avec une passion pour le développement de logiciels et une solide expérience en programmation. À la recherche d'une opportunité pour mettre en pratique mes compétences dans un environnement professionnel.</p>
+                        </section>
+                
+                        <section class="experience">
+                            <h2>Expérience Professionnelle</h2>
+                            <div class="job">
+                                <h3>Développeur Web</h3>
+                                <p>Création de site e-commerce</p>
+                                <p>Assistance dans le design et la mise en page UI/UX.</p>
+                                <ul>
+                                    <li>Création de sites web responsives en utilisant HTML, CSS, et JavaScript.</li>
+                                    <li>Collaboration avec les équipes backend pour le développement d'applications web.</li>
+                                </ul>
+                            </div>
+                        </section>
+                
+                        <section class="education">
+                            <h2>Éducation</h2>
+                            <p>Baccalauréat en Informatique | Université du Québec à Trois-Rivières | en cours</p>
+                            <ul>
+                                <li>Principaux cours : Algorithmes, Programmation Orientée Objet, Structures de Données</li>
+                                <li>Projets : Développement d'une application web en JavaScript, Python et MySQL</li>
+                            </ul>
+                        </section>
+                
+                        <section class="languages">
+                            <h2>Langues</h2>
+                            <ul>
+                                <li>Wolof - Langue maternelle</li>
+                                <li>Français - Avancée</li>
+                                <li>Anglais - Courante</li>
+                            </ul>
+                        </section>
+                    </main>
+                
+                    <aside>
+                        <div class="profile-photo">
+                            <img src="image/babacar.png" alt="Photo de profil">
+                        </div>
+                        <ul class="contact-info">
+                            <li>BABACAR FAYE</li>
+                            <li>Développeur Web</li>
+                            <li><i class="fas fa-map-marker-alt"></i>920 rue Neree Duplessis, Trois-Rivières, QC</li>
+                            <li><i class="fas fa-envelope"></i>babacarfaye@gmail.com</li>
+                            <li><i class="fas fa-phone"></i>438 336-2545</li>
+                        </ul>
+                
+                        <div class="skills">
+                            <h3>Compétences</h3>
+                            <ul>
+                                <li>Langages de programmation : Python, Java, C++</li>
+                                <li>Développement Web : HTML, CSS, JavaScript</li>
+                                <li>Base de données : MySQL, MongoDB</li>
+                                <li>Versioning : Git, GitHub</li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>  
+
+            <div id="cv-Mouhamed" class="cv-content">
+                <h1>Mouhamadou Sounkoung Danfakha</h1>
+                <div>
+                    <img id="pp" src="image/Mouhamed.png" alt="">
+                    <ul>
+                       <li> <i class="fas fa-map-marker-alt"></i> 706 Rue St Paul</li> &nbsp; 
+                       <li><i class="fas fa-phone"></i> 8199953810 </li>&nbsp; 
+                       <li><i class="fas fa-envelope"></i> mdanfakha248@gmail.com</li> &nbsp; 
+                    </ul>
+                    
+                </div>
+                <section class="summary">
+                    <h2>Description</h2>
+                    <p>Étudiant en Baccalaureat informatique a l'UQTR trés curieux et motivé par le domaine de la technologie et de la programmation. Au cours de mes études, j'ai aqueri une solide compréhension des concepts de base en informatique, tels que la programmation, les structures de données, les algorithmes, et les systèmes d'exploitation.</p>
+                </section>
+        
+                <section class="skills">
+                    <h2>Compétences Techniques</h2>
+                    <ul>
+                        <li>Programmation : Maîtrise des languages Informatiques comme Python, Java,et c.</li>
+                        <li>Bases de données : Maîtrise des bases de données relationnelles (SQL)</li>
+                        <li>Développement web : Connaissances en HTML, CSS</li>
+                    
+                    </ul>
+                </section>
+        
+                <section class="education">
+                    <h2>Formation</h2>
+                    <p><strong>Baccalaureat en Informatique</strong><br>Uqtr, trois riviéres,Canada<br>2024(en cour)</p>
+                    <p>Cours clés : Java, introduction en science des données, Probablité et Statistique.</p>
+                    <p><strong>Licence en Mathématique et Informatique</strong><br>UCAD, Dakar, Sénégal<br>2020 - 2023</p>
+                    <p>Cours clés :c, c++, java, Algébre, Analyse.</p>
+                </section>
+        
+                <section class="experience">
+                    <h2>Expérience Professionnelle</h2>
+                    <p><strong>Caissiers, service a la clientele</strong><br>la gondole, DAKAR<br>Janvier 2022</p>
+                    <ul>
+                        <li>Acceuil et reception des produits des client.</li>
+                        <li>Ouvrir et fermer la caisse</li>
+                        <li>Accuellir les client de maniere courtoise.</li>
+                        <li>Enregistrer les ventes, accepter les paiements en especes, par carte de credit,debit et autre forme de paiement</li>
+                    </ul>
+        
+                    <p><strong>Commis d'entrepot</strong><br>Patisen sa, DAKAR<br>aout 2021</p>
+                    <ul>
+                        <li>Nettoyage du materielle indistrielle.</li>
+                        <li>Nettoyagedu local du travail.</li>
+                        <li>Faire l'approvisionnement.</li>
+                    </ul>
+        
+                    <p><strong>Plongeur</strong><br>Maison du débauche, trois riviéres,Canada<br>Mars 2024</p>
+                    <ul>
+                        <li>Nettoyage de la vaisselle.</li>
+                        <li>Classer la vaisselle.</li>
+                        <li>approvisionnement des aliments.</li>
+                        <li>Inventaire.</li>
+                    </ul>
+                </section>
+        
+                <section class="languages">
+                    <h2>Langues</h2>
+                    <ul>
+                        <li>Français : C1</li>
+                        <li>Anglais : B2</li>
+                    </ul>
+                </section>
+        
+                <section class="interests">
+                    <h2>Hobbies</h2>
+                    <ul>
+                        <li>Lecture, Machine Learning, Sports</li>
+                        <li>Sport</li>
+                        <li>Nager</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div id="cv-AAF" class="cv-content">
+                <div>
+                    <h1>Abdoul Aziz Faye</h1>
+                    <p></p>
+                    <div>
+                        <img id="photo" src="image/Abdoul.png" alt="">
+                        <p>📞 +1(819)-701-6937</p>
+                        <p>✉️ Abdoul.Aziz.Faye@uqtr.ca</p>
+                        <p>🌐 www.Abdoul Aziz Faye.com</p>
+                        <p>📍 1047 Boulevard dès Récollets, Trois-Rivières</p>
+                    </div>
+                </div> 
+                <div>
+                    <div id="partie-gauche">
+                        <section>
+                            <h2>Profil Professionnel</h2>
+                            <p>Étudiant en cybersécurité et infonuagique à l’Université du Québec à Trois-Rivières, avec une passion 
+                                pour la sécurité des systèmes d’information et l’optimisation des infrastructures cloud. Expérience pratique 
+                                acquise lors de stages, combinée à une solide formation académique. Capable d'analyser des vulnérabilités, de 
+                                gérer des environnements cloud et de mettre en œuvre des solutions de sécurité efficaces.
+                            </p>
+                        </section>
+                        <section>
+                            <h2>Formation</h2>
+                            <h3>Baccalauréat en Informatique</h3>
+                            <p>Université du Québec à Trois-Rivières, Trois-Rivières, QC</p>
+                            <p>Janvier 2024 - Janvier 2026</p>
+                        </section>
+                        <section>
+                            <h2>Expérience Professionnelle</h2>
+                            <h3>Caissier</h3>
+                            <p>Brioche Doré, Keur Massar</p>
+                            <p>Mai 2023 - Septembre 2023</p>
+                            <ul>
+                                <li>Opérer une caisse enregistreuse.</li>
+                                <li>Emballer les marchandises.</li>
+                                <li>Répondre aux clients.</li>
+                            </ul>
+                            <h3>Aide-cuisinier </h3>
+                            <p>Restaurant Le Monde à Table, Keur Massar</p>
+                            <p>Janvier 2021 - Avril 2023</p>
+                            <ul>
+                                <li>Préparer les repas.</li>
+                                <li>Nettoyer la cuisine.</li>
+                                <li>Laver la vaisselle.</li>
+                            </ul>
+                            <h3>Préposé à l’entretien ménager </h3>
+                            <p>Hôpital Principal de Dakar, Dakar</p>
+                            <p>Décembre 2018 - Septembre 2020</p>
+                            <ul>
+                                <li>Effectuer différentes tâches ménagères.</li>
+                                <li>Vider les poubelles et le recyclage.</li>
+                                <li>Gérer et remplacer les produits de nettoyage.</li>
+                            </ul>
+                        </section> 
+                        <section>
+                            <h2>Aptitudes professionnelles</h2>
+                            <ul>
+                                <li>Esprit d’initiative, autonome et fonceur dans les tâches à accomplir.</li>
+                                <li>Capacité à trouver des solutions rapidement et à s’adapter lors de situations imprévues.</li>
+                                <li>Rigueur dans les tâches à accomplir, souci du détail et minutie.</li>
+                                <li>Capacité à travailler sous pression dans les situations de stress.</li>
+                                <li>Facilité à entrer en contact avec les gens, rapidité à cibler leurs besoins.</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div id="partie-droite">
+                        <section>
+                            <h2>Références</h2>
+                            <h3>Cheikh Mbacké</h3>
+                            <p>Brioche Doré, Keur Massar</p>
+                            <p>📞 (+221)-77-458-23-56</p>
+                            <p>✉️ Brioche@gmail.com</p>
+                            <p>🌐 www.BriocheDoré.com</p>
+                            <h3>Saliou Sarr</h3>
+                            <p>Restaurant Le Monde à Table, Keur Massar</p>
+                            <p>📞 (+221)-77-858-89-76</p>
+                            <p>✉️ MondeTable@gmail.com</p>
+                            <p>🌐 www.MondeTable.com</p>
+                            <h3>Moussa Sow</h3>
+                            <p>Hôpital Principal de Dakar, Dakar</p>
+                            <p>📞 (+221)-77-785-10-56</p>
+                            <p>✉️ HôpitalPrincipal@gmail.com</p>
+                            <p>🌐 www.HôpitalPrincipal.com</p>
+                        </section>
+                        <section>
+                            <h2>Hobbies :</h2>
+                            <ul>
+                                <li>Passionné de programmation et de développement d'applications.</li>
+                                <li>Passionné par le football,.</li>
+                                <li>J'aime le dynamisme du basketball.</li>
+                                <li> Adepte de la lecture, je m'intéresse particulièrement à la littérature contemporaine et aux essais.</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h2>Langues</h2>
+                            <ul>
+                                <li>Français</li>
+                                <li>Anglais</li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="Lamine" class="cv-content"> 
+                <h1>Lamine Diaw</h1> 
+                <span>ETUDIANT</span>
+                <div>
+                    <section>
+                        <ul id="infoPerso">
+                            <!--metre des icones à coté des informations personnelles-->
+                            <li><i class="fas fa-map-marker-alt"></i> 527 Rue Radisson, Trois-Rivières</li>
+                            <li><i class="fas fa-envelope"></i> lamine.diaw994@gmail.com</li>
+                            <li><i class="fas fa-phone"></i> 819 979-0216</li>
+                        </ul>
+                    </section>
+                    <img id="profil" src="image/lamine.png" alt="">
+                </div>
+                <div>
+                    <section id="description-Lamine" class="section_droite">
+                        <h4>Description</h4>
+                        <p>Étudiant en informatique à l'UQTR, compétent en programmation et développement logiciel, avec des expériences en orienté objet. Capable de travailler en équipe et de gérer des projets, je suis motivé par l'apprentissage continu et la recherche de solutions innovantes. À la recherche d'un stage pour approfondir mes compétences et contribuer à des projets significatifs.</p>
+                    </section>
+                    <section id="experience-Lamine" class="section_droite">
+                        <h4>Expériences Professionnels</h4>
+                        <ul>
+                            <li>
+                                <div class="experience">
+                                    <section>
+                                        <span>JUIL 2020 A NOV 2020</span>
+                                        <span>Restaurant Keur Mame</span>
+                                    </section>
+                                    <section>
+                                        <h5>SERVEUR EN RESTAURATION</h5>
+                                        <ul>
+                                            <li class="list">Responsable de fournir un service exceptionnel, de prendre les commandes avec précision, de maintenir une atmosphère accueillante et de garantir la satisfaction des clients en assurant un service efficace et professionnel.</li>
+                                            <li class="list">Préparation des repas et maintien de la propreté des ustensiles et de l'espace de travail.</li>
+                                        </ul>
+                                    </section>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="experience">
+                                    <section>
+                                        <span>JUIL 2021 A NOV 2021</span>
+                                        <span>MBAYE Ets frères</span>
+                                    </section>
+                                    <section>
+                                        <h5>ASSOCIÉ ENTREPOTS</h5>
+                                        <ul>
+                                            <li class="list">Décharger les livraisons entrantes, vérifier les bons de livraison pour assurer la conformité des articles reçus, trier et ranger les produits dans les emplacements désignés.</li>
+                                            <li class="list">Maintenir l'entrepôt propre et bien rangé, organiser les articles dans les zones de stockage désignées, étiqueter correctement les marchandises pour une identification facile.</li>
+                                            <li class="list">Préparer les commandes en fonction des demandes des clients ou des ordres de travail et charger les produits dans les camions de livraison, vérifier l'exactitude des commandes avant l'expédition, maintenir des documents d'expédition précis et à jour.</li>
+                                        </ul>
+                                    </section>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="experience">
+                                    <section>
+                                        <span>JUIL 2022 A NOV 2022</span>
+                                        <span>Auchan</span>
+                                    </section>
+                                    <section>
+                                        <h5>MISE EN RAYON</h5>
+                                        <ul>
+                                            <li class="list">Chargé de recevoir, trier, mettre en rayon et maintenir l'ordre des produits, tout en assurant un service clientèle de qualité, en respectant les normes de sécurité et en collaborant efficacement avec l'équipe.</li>
+                                        </ul>
+                                    </section>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section id="parcours" class="section_droite">
+                        <h4>Formations</h4>
+                        <ul>
+                            <li>
+                                <div class="formation">
+                                    <span>2022 - 2023</span>
+                                    <span>Master en gestion de données et ingénierie logicielle</span>
+                                </div>
+                            </li>
+                            <li> 
+                                <div class="formation">
+                                    <span>2018 - 2022</span>
+                                    <span>Licence en sciences appliquées et technologies</span>
+                                </div>
+                            </li>
+                            <li> 
+                                <div class="formation">
+                                    <span>2016 - 2017</span>
+                                    <span>Diplôme de l’enseignement secondaire en sciences expérimentales</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section id="Competences-Lamine" class="last">
+                        <h4>Compétences</h4>
+                        <ul>
+                            <li>Maîtrise des logiciels spécifiques</li>
+                            <li>Travail d’équipe et collaboration</li>
+                            <li>Adaptabilité et flexibilité</li>
+                            <li>Capacité à travailler sous pression</li>
+                            <li>Capacité à respecter les délais</li>
+                            <li>Aptitude à communiquer clairement et efficacement avec divers parties prenantes</li>
+                            <li>Orientation client</li>
+                            <li>Attitude orientée solution</li>
+                        </ul>
+                    </section>
+                    <section class="last">
+                        <section id="lang">
+                            <h4>Langues</h4>
+                            <ul>
+                                <li>Français</li>
+                                <li>Anglais (débutant)</li>
+                            </ul>
+                        </section>
+                        <section id="hobbies-Lamine">
+                            <h4>Hobbies</h4>
+                            <ul>
+                                <li>Lecture</li>
+                                <li>Codage</li>
+                                <li>Voyage</li>
+                            </ul>
+                        </section>
+                    </section>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+    <script src="site.js"></script>
+
+</body>
+</html>

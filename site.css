@@ -1,0 +1,558 @@
+body {
+    background-color: white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    margin-bottom: 3px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /*pour donner un peu de relief a notre header */
+}
+
+header h1 {
+    color: #557149;
+    font-size: 30px;
+    font-family: 'Yatra One', sans-serif; /*pour utiliser la font exportée depuis google font*/
+    font-weight: bold;
+}
+
+.icon {
+    width: 180px;
+    height: 80px;
+}
+
+.container {
+    height: auto;
+}
+
+#menu_nav {
+    position: relative; /*pour pouvoir positionner ses enfants par a lui et non pas par rapport au body*/
+    width: 19%;
+    height: 100vh;
+    border-radius: 7px;
+    float: left;
+    background-color: rgb(255, 255, 255);
+}
+
+#menu_nav ul {
+    padding: 0;
+}
+
+#menu_nav ul li {
+    list-style-type: none; /*pour supprimer les puce sur nos items*/
+    margin-left: 19px;
+    margin-bottom: 7px;
+    font-size: 19px;
+}
+
+#menu_nav>ul>li>a {
+    display: block;
+    width: 55%;
+    text-decoration: none; /*pour supprimer la decoration sur les lien de notre menu*/
+    color: #557149;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s; /* Ajout de la transition pour le fond */
+    padding: 8px 15px;
+}
+
+#menu_nav ul li a:hover {
+    background-color: #557149;; 
+    color: white;
+    cursor: pointer; /*pour le curseur pointer les liens survolés*/
+}
+
+.sous_menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    position: absolute; /*pour pouvoir la positionner par rapport au parent c-a-d le li*/
+    left: 45%;
+}
+
+.ele_menu:hover .sous_menu {
+    display: block; /*afficher le sous menu lorsqu'on survol sur un element du menu*/
+    background-color: white;
+    color: black;
+    
+}
+
+.sous_menu li a{
+    display: block;
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    width: 80%;
+}
+
+.ele_menu:hover {
+    color: #f0f0f0;
+    font-weight: bold;
+}
+
+#acceuil {
+    text-align: center;
+    padding-top: 150px;
+}
+
+.cv-content {
+    padding: 20px 30px;
+    display: block;
+    margin-left: 19.2%;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+#acceuil span {
+    color: rgb(11, 77, 121);
+    font-weight: bold;
+    font-size: 24px;
+    display: block;
+    margin: 10px 0;
+}
+
+#cv_nav {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+#cv_list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 100%;
+}
+
+#cv_list li {
+    flex: 1; /* Chaque élément prend une part égale de l'espace */
+    text-align: center;
+    margin: 0 10px;
+}
+
+#cv_list img {
+    max-width: 100%;
+    height: 300px; 
+    border-radius: 8px;
+}
+
+.cv-content:not(.active) {
+    display: none; /*masquer le contenu qui n'est pas active*/
+}
+
+/*lamine*/
+#Lamine>span{
+    display: block;
+    position: relative;
+    top: -25px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/*
+faire de mes informations personnels et mon photo des items flex
+les cebtrer par par rapport a l'axe verticale
+et placer les infos a gauche et la photo à droite
+*/
+#Lamine>div:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+}
+
+#infoPerso li{
+    margin: 25px;
+    font-size: 15px;
+}
+
+#profil {
+    height: 170px;
+    width: 170px;
+    border-radius: 10px;
+    transform: translateX(-50%);
+    border: 1px inset #bcd1b4; /*mettre un bordure autour de la photo*/
+}
+
+#Lamine section span {
+    display: block;
+    padding: 10px 25px;
+    font-size: 15px;
+}
+
+#Lamine section h4 {
+    padding-bottom: 6px;
+    border-bottom: 6px solid #bcd1b4;
+    border-radius: 3px;
+    width: 40px;
+    font-size: 18px;
+}
+
+#Lamine section ul li {
+    font-size: 14px;
+}
+
+#Lamine h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 33px;
+    font-size: 28px;
+}
+
+#Lamine .section_droite {
+    margin-right: 50px;
+}
+
+#Lamine .section_droite h4 {
+    border-bottom: 6px solid #bcd1b4;
+}
+
+#Lamine .section_droite p {
+    margin-right: 30px;
+    font-size: 16px;
+}
+
+#Lamine ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+/*pour pouvoir avoir une disposition flexible entre la duree, le nom de l'entreprise 
+les taches effectuées et le titre du poste
+*/
+#Lamine .experience {
+    display: flex;
+}
+
+#Lamine .experience section:nth-of-type(2) {
+   left: 30px;
+   position: relative;
+   top: -11px;
+   font-weight: bold;
+   font-size: 15px;
+   right: 50px;
+}
+
+#Lamine .last ul li {
+    margin: 10px 25px;
+    font-size: 15px;
+}
+
+#Lamine .experience section:nth-of-type(2) ul{
+    position: relative;
+    top: -3px;
+    font-weight: normal;
+    font-size: 13px;
+ }
+
+ #Lamine .experience section span {
+    display: block;
+    width: 130px;
+    font-size: 13px;
+}
+
+/*pour avoir une disposition flexible entre l'année academique et la formation de mon parcours academique*/
+#Lamine .formation {
+    display: flex;
+}
+
+#Lamine .list {
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+#Lamine i {
+    margin-right: 13px;
+    width: 13px;
+    height: 13px;
+}
+
+#Lamine h4,p {
+    margin-left: 25px;
+}
+
+#lang {
+    float: right;
+    position: relative;
+    left: -300px;
+    top: -23px;
+}
+
+/* Style de Babacar*/
+
+#Babacar {
+    font-family: 'Arial', sans-serif;
+}
+
+#Babacar>div:nth-of-type(1) {
+    display: flex;
+}
+
+
+#Babacar aside {
+    width: 30%;
+    background-color: #E0F7FA;
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Babacar aside .profile-photo img {
+    
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#Babacar aside h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+#Babacar aside p {
+    margin: 5px 0;
+}
+
+#Babacar .contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+#Babacar .contact-info li {
+    padding: 5px 5px;
+}
+
+#Babacar .skills {
+    margin-top: 30px;
+}
+
+#Babacar.skills h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 5px;
+}
+
+#Babacar .skills ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+#Babacar .skills ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+#Babacar main {
+    width: 69.5%;
+    padding: 20px;
+}
+
+#Babacar main h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    border-bottom: 3px solid #bcd1b4;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+#Babacar main section {
+    margin-bottom: 40px;
+}
+
+#Babacar .job h3 {
+    color: #3498db;
+    margin: 0;
+}
+
+#Babacar .job p {
+    margin: 5px 0;
+    color: #7f8c8d;
+}
+
+#Babacar .job ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#Babacar .job ul li {
+    margin-bottom: 10px;
+}
+
+#Babacar .education, .languages {
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+#Babacar .languages ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#Babacar .languages ul li {
+    margin-bottom: 10px;
+}
+
+#Babacar img{
+    float:right 20px;
+    height: 20px;
+    width: 20px;
+}
+
+
+ @media (max-width: 768px) {
+    #Babacar {
+        flex-direction: column;
+    }
+
+    #Babacar aside, main {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #Babacar aside .profile-photo img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+#Babacar i {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+/*Style Mouhamed*/
+#cv-Mouhamed {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+#cv-Mouhamed {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+#pp {
+    width: 170px;
+    height: 170px;
+    border-radius: 10px;
+    float: right;
+}
+
+#cv-Mouhamed h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-align: center;
+    border-bottom: 3px solid #bcd1b4;
+}
+
+#cv-Mouhamed h2 {
+    padding: 10px;
+    border-radius: 25px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #bcd1b4;
+}
+
+#cv-Mouhamed ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 25px;
+}
+
+#cv-Mouhamed ul li {
+    margin-bottom: 10px;
+}
+
+#cv-Mouhamed header p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style AAF*/
+
+#cv-AAF {
+    background-color: white;  
+}
+
+#cv-AAF section {
+    margin: 0px 10px 0px 15px;
+}
+
+#cv-AAF p
+{
+    margin-left: 0px;
+}
+#cv-AAF>div:nth-of-type(2){
+    display: flex;
+    width: 100%;
+}
+
+#cv-AAF>div:nth-of-type(1){
+    background-color:rgba(240, 248, 255, 0.878);
+    margin-bottom: 1px;
+    padding: 10px;
+}
+
+#photo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    float: right;
+    position: relative;
+    top: -30px;
+    left: -30px;
+    border: 2px solid black;
+}
+
+#partie-gauche {
+    width: 70%;
+}
+
+
+#partie-droite {
+    flex: 1;
+    border-left: 2px solid #504949 ;
+   background-color:lightblue;
+}
+
+#cv-AAF h1 {
+    color: #333;
+    text-align: center;
+}
+
+#cv-AAF h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#cv-AAF h3 {
+    
+    font-size: 17px;
+}
+
+#cv-AAF ul{
+    padding: 0;
+    margin: 15px;
+}
+
+#cv-AAF ul li {
+    padding:0px 6px;
+    margin: 10px 0px;
+}
